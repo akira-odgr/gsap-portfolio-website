@@ -3,6 +3,7 @@ import localFont from "next/font/local"
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import CustomCursor from "@/components/layout/CustomCursor";
+import { LenisProvider } from "@/components/layout/LenisProvider";
 
 export const bebasNeue = localFont({
   src: [
@@ -39,15 +40,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <CustomCursor />
-      <Header />
-      <body
-        className={`${bebasNeue.variable} ${pally.className} antialiased`}
-      >
-        <main className="min-h-svh">
-          {children}
-        </main>
-      </body>
+      <LenisProvider>
+        <CustomCursor />
+        <Header />
+        <body
+          className={`${bebasNeue.variable} ${pally.className} antialiased`}
+        >
+          <main className="min-h-svh">
+            {children}
+          </main>
+        </body>
+      </LenisProvider>
     </html>
   );
 }
