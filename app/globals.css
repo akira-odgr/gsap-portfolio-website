@@ -30,4 +30,8 @@
   .text-line {
     @apply overflow-hidden text-nowrap;
   }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
 }
