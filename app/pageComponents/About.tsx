@@ -53,7 +53,7 @@ const About = () => {
                 <div ref={wrapperRef} className={cn("about-wrapper", "bg-stone-100 mx-auto max-w-[90%] px-8 py-20 h-dvh space-y-5 rounded-t-[100px]", "sm:max-w-[70%]")}>
                     <h2 className={cn("text", "text-4xl", "sm:text-5xl", "lg:text-7xl")}>about me</h2>
                     <p className={cn("text", "text-lg max-w-3xl mx-auto", "lg:text-xl")}>
-                        I'm Julian van Mees, a full-stack developer building scalable,
+                        I&apos;m Julian van Mees, a full-stack developer building scalable,
                         lightning-fast, and digital experiences where meets
                         code.
                     </p>
